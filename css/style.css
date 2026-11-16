@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f5f7f6;
+  --text: #1f2a29;
+  --card-bg: #ffffff;
+  --accent: #0f6b63;
+  --border: #d9e2df;
+
+  --dark-bg: #111817;
+  --dark-text: #e8efed;
+  --dark-card-bg: #1c2625;
+  --dark-border: #2e3b39;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+body.dark {
+  --card-bg: var(--dark-card-bg);
+  --border: var(--dark-border);
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+header,
+main,
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.bar-name {
+  font-weight: bold;
+}
+
+.bar-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bar-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.about {
+  text-align: center;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#theme-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--accent);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.card:hover {
+  border-color: var(--accent);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 400px;
+}
+
+.contact-form input {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.contact-form input[type="submit"] {
+  margin-top: 8px;
+  background-color: var(--accent);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
